@@ -1,0 +1,188 @@
+/*ESSA FONTE DE TEXTO FOI RETIRADA DO SITE: https://fonts.google.com/?sort=popularity */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/*PARA LIMPAR TODO E QUALQUER CONFIGURAÇÃO VINDA DO CÓDIGO HTML, FAREMOS O SEGUINTE:*/
+
+*{
+    margin: 0; /*É A DISTÂNCIA DA TAG ATÉ O EXTERIOR*/
+    padding: 0; /*É A DISTÂNCIA DA TAG ATÉ O CONTEÚDO DELA*/
+    box-sizing: border-box;
+    text-decoration: none; /*REMOVE QUALQUER DECORAÇÃO QUE TEM NO TEXTO*/
+}
+
+body
+{
+    font-size: 100%;
+
+     /* ESSE FUNDO GRADIENTE EU RETIREI DO SITE: https://cssgradient.io/ */
+     background: rgb(1,90,4);
+     background: -moz-linear-gradient(90deg, rgba(1,90,4,1) 3%, rgba(58,229,6,1) 36%, rgba(75,255,202,0.9671218829328606) 100%);
+     background: -webkit-linear-gradient(90deg, rgba(1,90,4,1) 3%, rgba(58,229,6,1) 36%, rgba(75,255,202,0.9671218829328606) 100%);
+     background: linear-gradient(90deg, rgba(1,90,4,1) 3%, rgba(58,229,6,1) 36%, rgba(75,255,202,0.9671218829328606) 100%);
+     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#015a04",endColorstr="#4bffca",GradientType=1);
+
+}
+
+.cabecalho /*USANDO AS CLASSES CRIADAS NO HTML PARA ORGANIZAR O LAYOUT DA PÁGINA*/
+{
+
+    /*PRA VOCÊ USAR O FLEXBOX VOCÊ SEMPRE UTILIZA UMA PROPRIEDADE CHAMADA display:flex*/
+    display: flex; /*VOCÊ TERÁ QUE ENTRAR NO SITE DO FLEXBOX PARA PODER SE ORIENTAR EM RELAÇÃO AO POSICIONAMENTO DOS ÍCONES DENTRO DA PÁGINA. O SITE É: https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
+    
+    flex-direction: row; /*OS ÍCONES FICARÃO POSICIONADOS NA HORIZONTAL, TIPO LINHA*/
+    
+    flex-wrap: wrap; /*NO CASO DE NÃO COUBER NA TELA TODA, OS LINKS DAS MINHAS PÁGINAS VOU PRA BAIXO DA MINHA FOTO*/
+    
+    align-items: center; /*ALINHANDO OS ÍTENS NO CENTRO DA PAGINA*/
+    
+    justify-content: space-around; /*VAI ALINHAS OS ÍTENS DAS EXTREMIDADES, NO CASO DA MINHA PÁGINA, É A MINHA FOTO COM O LINK DO DO YOUTUBE */
+    
+    padding: 25px; /*DISTÊNCIA DO TOPO DA PÁGINA ATÉ OS PRIMEIRO ÍCONES*/
+}
+
+.cabecalho-imagem /*DEFININDO O TAMANHO DA MINHA FOTO NA PÁGINA*/
+{
+    height: 170px;
+}
+
+.cabecalho-menu
+{
+    display: flex; /*TERÁ COMO PARÂMETRO O FLEXBOX*/
+
+    gap: 16px; /*DISTÂNCIA ENTRE OS ÍCONES*/
+}
+
+.cabecalho-menu-item
+{
+    font-family: 'Quicksand', sans-serif; /*FONTE RETIRADA DO SITE: https://fonts.google.com/?sort=popularity . AQUI É O ESTILO DA FONTE*/
+
+    font-weight: 400;
+
+    font-size: 20px;
+
+    color: #011f01;
+    
+}
+
+.conteudo /*AGORA VAMOS PARTIR PARA A CLASSE PRINCIPAL*/
+{
+    margin-bottom: 48px; /*DISTÂNCIA DO FIM DO CONTEÚDO PRINCIPAL PARA RODAPÉ (FOOTER)*/
+}
+
+.conteudo-principal
+{
+    display: flex; /*TERÁ COMO PARÂMETRO O FLEXBOX*/  
+    
+    flex-direction: column;
+
+    align-items: center; /*ALINHANDO OS ÍTENS NO CENTRO DA PAGINA*/
+
+    justify-content: center; /*NO SITE DO FLEX BOX EXPLICA MELHOR COMO FICA A VIZUALIZAÇÃO*/
+
+}
+
+.conteudo-principal-escrito
+{
+    display: flex; /*TERÁ COMO PARÂMETRO O FLEXBOX*/  
+    
+    flex-direction: column; /*VAI FICAR EM FORMA DE COLUNA, OU SEJA, UM EMBAIXO DO OUTRO*/
+
+    gap: 10px ;    /*DISTÂNCIA DO TÍTULO E DO SUBTÍTULO*/
+}
+
+.conteudo-principal-escrito-titulo
+{
+    font-family: 'Quicksand', sans-serif; /*FONTE RETIRADA DO SITE: https://fonts.google.com/?sort=popularity . AQUI É O ESTILO DA FONTE*/
+    
+    font-weight: 400; /*AQUI DIGAMOS QUE É O PESO DA FONTE. QUANTO MAIOR, MAIS ESPESSA FICA A FONT*/
+
+    font-size: 64px; /*TAMANHO DA FONTE*/
+
+    color: #001e03; /*NO MESMO SITE QUE TO PEGANDO AS CORES TUDO HAHAH*/
+}
+
+.conteudo-principal-escrito-subtitulo
+{
+    font-family: 'Dancing Script', cursive;
+
+    font-weight: 400;
+
+    font-size: 24px;
+
+    color: #011f01;
+
+}
+
+.conteudo-principal-imagem
+{
+    height: 300px; /*TAMANHO DA IMAGEM, NO CASO, MEU AVATAR*/
+}
+
+.conteudo-secundario
+{
+    display: flex; /*UTILIZANDO O FORMATO FLEX BOX*/
+
+    flex-direction: column; /*ALINHANDO NO FORMATO COLUNA*/
+
+    align-items: center;
+
+    margin-top: 25px; /*DISTANCIA DO AVATAR ATÉ O TEXTO*/
+}
+
+.conteudo-secundario-titulo
+{
+    border-top: 0.7px solid #02011c; /*BORDA DO TOPO E AI DEFINI QUE A BORDA SERÁ DE 0.5 PIXEL, BORDA SÓLIDA E AQUELE CÓDIGO DA COR EM HEXADECIMAL. SITE: https://cssgradient.io/*/
+
+    padding-top: 25px; /*DISTÂNCIA DA LINHA ABAIXO DO AVATAR PARA O TÍTULO "RESUMO PROFISSIONAL"*/
+
+    font-family: 'Dancing Script', cursive;
+
+    font-weight: 400;
+
+    font-size: 28px;
+
+    color: #02011c;
+
+    margin-bottom: 16px; /*DISTÂNCIA DO TÍTULO (REUSMO PROFISSIONAL) PARA O TEXTO ABAIXO*/
+}
+
+.conteudo-secundario-paragrafo
+{
+    font-family: 'Quicksand', sans-serif;
+
+    font-weight: 600;
+
+    font-size: 20px;
+
+    color: #02011c;
+}
+
+.rodape
+{
+    display: flex; /*UTILIZANDO O FORMATO FLEX BOX*/
+
+    flex-direction: column; /*ALINHANDO NO FORMATO COLUNA*/
+
+    align-items: center;
+
+    padding-top: 25px;
+
+    border-top: 0.7px solid #02011c; /*BORDA DO TOPO E AI DEFINI QUE A BORDA SERÁ DE 0.5 PIXEL, BORDA SÓLIDA E AQUELE CÓDIGO DA COR EM HEXADECIMAL. SITE: https://cssgradient.io/*/
+}
+
+.rodape-gif
+{
+    height: auto;
+}
+
+.rodape-ref
+{
+    font-family: 'Quicksand', sans-serif;
+
+    font-weight: 500;
+
+    font-size: 12px;
+
+    color: #02011c;
+}
