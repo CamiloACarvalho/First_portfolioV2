@@ -1,2 +1,5 @@
 # First_portfolioV2
-Os mesmos elementos, o mesmo html, porém um visual um pouco diferente.
+
+Hi everyone!!! I'm glad that you visit my page! Welcome and enjoy!
+
+This code is the same 
