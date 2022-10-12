@@ -9,5 +9,9 @@ I'll be greatfull.
 
 Ah, I was forgetting, all code is commented. 😁✌️
 
+#
+
+<div align="center">
+
 ![DogSleepyGIF](https://user-images.githubusercontent.com/111397870/193483309-35b4d7be-12ae-41d1-86f0-c4be301a396b.gif)
 
